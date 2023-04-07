@@ -1,0 +1,11 @@
+server:
+  port: 8080
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: micro1
+          uri: http://localhost:8085/
+          predicates:
+            - Path=/micro1/**
+
