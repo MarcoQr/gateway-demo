@@ -5,7 +5,7 @@ spring:
     gateway:
       routes:
         - id: micro1
-          uri: http://localhost:8085/
+          uri: https://demo-openshift-git-marcoqrsof-dev.apps.sandbox-m3.1530.p1.openshiftapps.com
           predicates:
             - Path=/micro1/**
 
